@@ -5,20 +5,78 @@
 }
 .header__contacts{
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
-.header__item{
+.header__item {
   display: flex;
   flex-direction: column;
   font-weight: 400;
   font-size: 14px;
-  }
+  margin-right: 40px;
+}
 .header__bold{
   font-weight: 600;
+}
+.header__blue{
+  color:#3F4E65;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
 }
 .menu__list{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+}
+.bottom{
+  border-top: 1px solid rgba(63, 78, 101, 0.3);
+  border-bottom: 1px solid rgba(63, 78, 101, 0.3);
+}
+.bottom__callback{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  .bottom__number{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+  }
+}
+.cart{
+  display: flex;
+  flex-direction: column;
+}
+.price{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  &::after{
+    content:'₸';
+    margin-left: 5px;
+  }
+}
+.carticon{
+  position: relative;
+}
+.cartCount{
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #FFC85E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  right: -3px;
+  top: 2px;
+}
+.cartWrapper{
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
