@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './MyButton.module.scss';
 
-const MyButton = ({children, icon, ...props}) => {
+const MyButton = ({children, icon, size, ...props}) => {
     let iconStyle = '';
+    let buttonSize = '';
 
     if (icon === 'catalog') {
         iconStyle = styles.catalog;
@@ -16,8 +17,16 @@ const MyButton = ({children, icon, ...props}) => {
         iconStyle = styles.price;
     }
 
+    if (icon === 'cart') {
+        iconStyle = styles.cart;
+    }
+
+    if (size === 'small') {
+        buttonSize = styles.small;
+    }
+
     return (
-        <button {...props} className={styles.button + ' ' + iconStyle}>
+        <button {...props} className={styles.button + ' ' + iconStyle + ' ' + buttonSize}>
             {children}
         </button>
     );

@@ -46,3 +46,17 @@
     content: url("./icon/search.svg");
   }
 }
+.cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  &::after{
+    content: url("./icon/cart.svg");
+    margin-bottom: -3px;
+  }
+}
+.small{
+  width: 153px;
+  height: 45px;
+}
